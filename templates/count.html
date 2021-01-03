@@ -1,0 +1,20 @@
+<h1>
+	count is {{ count }} words!
+</h1>
+
+<a href='{% url "home" %}'>Start Over</a>
+
+<h1>Here is your original text</h1>
+{{ fulltext }}
+
+<h2>Here's the breakdown</h2>
+
+{% for word, appearance in sortedwords %}
+
+{{ word}} --  {{ appearance }}
+<br />
+
+<br />
+
+{% endfor %}
+
