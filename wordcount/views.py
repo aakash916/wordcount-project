@@ -25,4 +25,4 @@ def count(request):
 
 
 def about(request):
-	return HttpResponse('Welcome to my site!')
+	return HttpResponse('<h2>Welcome to my site!</h2>')
